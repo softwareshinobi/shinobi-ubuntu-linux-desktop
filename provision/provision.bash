@@ -6,6 +6,36 @@ set -e
 
 set -x
 
+
+
+
+
+
+
+
+##
+
+cd media/
+
+bash media.bash
+
+cd ..
+
+##
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ##
 
 cd installs/
@@ -13,5 +43,3 @@ cd installs/
 bash installs.bash
 
 cd ..
-
-##
