@@ -15,7 +15,7 @@ pipeline {
             
             agent {
             
-                label "aventador"
+                label "sian"
             
             }
 
@@ -35,7 +35,7 @@ pipeline {
 
             agent {
             
-                label "aventador"
+                label "sian"
             
             }
 
