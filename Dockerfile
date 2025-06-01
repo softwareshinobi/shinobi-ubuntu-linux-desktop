@@ -1,10 +1,14 @@
-FROM dorowu/ubuntu-desktop-lxde-vnc as desktopBase
+FROM dorowu/ubuntu-desktop-lxde-vnc AS desktopBase
 
 ##
 
 WORKDIR /
 
 COPY /provision .
+
+RUN pwd
+
+RUN find
 
 ##
 
