@@ -2,8 +2,10 @@ FROM dorowu/ubuntu-desktop-lxde-vnc as desktopBase
 
 ##
 
-ARG DEBIAN_FRONTEND=noninteractive
+WORKDIR /
 
-RUN rm /etc/apt/sources.list.d/google-chrome.list
+COPY /provision .
 
-RUN apt update && apt upgrade -y;
+##
+
+RUN bash provision.bash
