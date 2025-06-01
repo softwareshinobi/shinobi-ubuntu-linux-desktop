@@ -50,26 +50,5 @@ pipeline {
             }
 
         }    
-  
-        stage('prune') {
-
-            agent {
-            
-                label "aventador"
-            
-            }
-
-            steps {
-
-                dir('.') {
-
-                    sh 'docker system prune -a -f'
-                    
-                }                  
-
-            }
-
-        }  
         
 }}
-
