@@ -1,39 +1,39 @@
 services:
 
-        shinobi-ubuntu-linux-desktop:
+    shinobi-ubuntu-linux-desktop:
 
-        container_name: shinobi-ubuntu-linux-desktop
+    container_name: shinobi-ubuntu-linux-desktop
 
-        image: softwareshinobi/shinobi-ubuntu-linux-desktop:pristine
+    image: softwareshinobi/shinobi-ubuntu-linux-desktop:pristine
 
-        restart: unless-stopped
+    restart: unless-stopped
 
-        hostname: veneno
+    hostname: veneno
 
-        build:
+    build:
 
-            context: .
+        context: .
 
-            dockerfile: Dockerfile
+        dockerfile: Dockerfile
 
-        ports:
+    ports:
 
-            - "5922:22"
+        - "5922:22"
 
-            - "5980:80"
+        - "5980:80"
 
-            - "5900:5900"
+        - "5900:5900"
 
-        environment:
+    environment:
 
-            TZ: America/New_York
+        TZ: America/New_York
 
-            USER_UID: 1000
+        USER_UID: 1000
 
-            USER_GID: 1000
+        USER_GID: 1000
 
-            USER: shinobi
+        USER: shinobi
 
-            PASSWORD: shinobi
+        PASSWORD: shinobi
 
-            HTTP_PASSWORD: shinobi
+        HTTP_PASSWORD: shinobi
