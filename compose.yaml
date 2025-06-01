@@ -4,7 +4,7 @@ services:
 
         container_name: shinobi-ubuntu-linux-desktop
 
-        image: softwareshinobi/shinobi-ubuntu-linux-desktop:pristine
+        image: softwareshinobi/shinobi-ubuntu-linux-desktop:minimal
 
         restart: unless-stopped
 
