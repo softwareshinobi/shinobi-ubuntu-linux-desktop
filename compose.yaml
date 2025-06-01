@@ -1,18 +1,12 @@
 services:
 
-##########################################
-##
-## shinobi / cloud ubuntu desktop
-##
-##########################################
+        shinobi-ubuntu-linux-desktop:
 
-    cloud-ubuntu-desktop:
-
-        container_name: cloud-ubuntu-desktop
+        container_name: shinobi-ubuntu-linux-desktop
 
         hostname: urus
 
-        image: softwareshinobi/cloud-ubuntu-desktop
+        image: softwareshinobi/shinobi-ubuntu-linux-desktop:pristine
 
         restart: unless-stopped
 
@@ -20,13 +14,7 @@ services:
 
             context: .
 
-            dockerfile: Dockerfile
-
-        volumes:
-
-            - /tmp/volumes/urus/shinobi:/home/shinobi
-
-        domainname: desktop.softwareshinobi.digital
+            dockerfile: Dockerfile    
 
         ports:
 
@@ -49,8 +37,3 @@ services:
             PASSWORD: shinobi
 
             HTTP_PASSWORD: shinobi
-
-            VIRTUAL_HOST: desktop.softwareshinobi.digital
-
-            LETSENCRYPT_HOST: desktop.softwareshinobi.digital
-            
