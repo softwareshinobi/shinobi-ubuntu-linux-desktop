@@ -1,11 +1,7 @@
-# Cloud Ubuntu Server
+# shinobi ubuntu linux desktop
 
 --
 
-![SQL Query Tool](cover.png)
-
---
-
-## Cloud Ubuntu Server Overview
+![Shinobi Ubuntu Linux Desktop](cover.png)
 
 --
