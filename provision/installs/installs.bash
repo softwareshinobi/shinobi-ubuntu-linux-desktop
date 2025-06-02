@@ -12,4 +12,6 @@ bash apt.bash
 
 bash upgrade.bash
 
+bash software.bash
+
 bash version.bash

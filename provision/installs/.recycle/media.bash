@@ -1,5 +1,12 @@
+#!/bin/bash
 
-set -x
+##
+
+set -e;
+
+set -x;
+
+##
 
 outputDIR=/tmp/media/backgrounds/
 
@@ -10,4 +17,3 @@ ls -lha /
 pwd
 
 cp /provision/media/Backgrounds/desktop.png /usr/share/lxqt/themes/light/simple_blue_widescreen.png
-
