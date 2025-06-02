@@ -10,8 +10,12 @@ set -x;
 
 apt update
 
-apt install -y recordmydesktop kdenlive shotcut zip keepassx dos2unix git filezilla remmina openssh-server sudo vim sshpass
+apt install -y sudo remmina openssh-server sshpass git vim nano dos2unix zip filezilla
 
-apt install -y wget net-tools curl nslookup
+apt install -y recordmydesktop kdenlive shotcut keepassxc
+
+apt install -y wget net-tools curl
+
+## bad nslookup
 
 apt autoremove -y
