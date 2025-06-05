@@ -10,7 +10,9 @@ set -x;
 
 apt update
 
-apt install -y sudo remmina openssh-server sshpass git vim nano dos2unix zip filezilla
+apt install -y remmina openssh-server sshpass
+
+apt install -y sudo git vim nano dos2unix jq zip filezilla
 
 apt install -y recordmydesktop kdenlive shotcut keepassxc
 
