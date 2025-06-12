@@ -1,15 +1,22 @@
-FROM dorowu/ubuntu-desktop-lxde-vnc AS desktopBase
+FROM dorowu/ubuntu-desktop-lxde-vnc AS base
 
 ##
 
-WORKDIR /
+WORKDIR /provision
+
+##
 
 COPY /provision .
 
-RUN pwd
+RUN bash provision.bash
 
-RUN find
+#RUN pwd
+
+#RUN find
 
 ##
 
-RUN bash provision.bash
+
+
+##RUN touch ../test.dat
+##

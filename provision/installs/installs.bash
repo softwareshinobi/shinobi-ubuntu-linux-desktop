@@ -14,4 +14,7 @@ bash apt.bash
 
 bash software.bash
 
+bash sshserver.bash
+
 bash version.bash
+

@@ -43,3 +43,10 @@ cd installs/
 bash installs.bash
 
 cd ..
+
+
+cd startup/
+
+bash reconfigure.bash
+
+cd ..
