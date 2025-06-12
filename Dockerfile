@@ -1,15 +1,31 @@
-FROM dorowu/ubuntu-desktop-lxde-vnc AS desktopBase
+FROM dorowu/ubuntu-desktop-lxde-vnc AS base
 
 ##
 
 WORKDIR /
 
+##
+
 COPY /provision .
 
-RUN pwd
+RUN bash provision.bash
 
-RUN find
+##COPY startup/startup.sh ../startup.sh
+
+##COPY installs/startup/startup.sh /startup.sh
 
 ##
 
-RUN bash provision.bash
+##WORKDIR /
+
+
+#RUN pwd
+
+#RUN find
+
+##
+
+
+
+##RUN touch ../test.dat
+##
