@@ -12,8 +12,12 @@ bash apt.bash
 
 bash upgrade.bash
 
+##
+
 bash software.bash
 
 bash sshserver.bash
+
+##
 
 bash version.bash
