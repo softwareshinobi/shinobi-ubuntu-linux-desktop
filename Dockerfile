@@ -2,7 +2,7 @@ FROM dorowu/ubuntu-desktop-lxde-vnc AS base
 
 ##
 
-WORKDIR /provision
+WORKDIR /
 
 ##
 
@@ -12,9 +12,11 @@ RUN bash provision.bash
 
 COPY startup/startup.sh ../startup.sh
 
+##COPY installs/startup/startup.sh /startup.sh
+
 ##
 
-WORKDIR /
+##WORKDIR /
 
 
 #RUN pwd
