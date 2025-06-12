@@ -10,7 +10,7 @@ COPY /provision .
 
 RUN bash provision.bash
 
-COPY startup/startup.sh ../startup.sh
+##COPY startup/startup.sh ../startup.sh
 
 ##COPY installs/startup/startup.sh /startup.sh
 
