@@ -8,6 +8,6 @@ pwd
 
 find
 
-cp /provision/startup/startup.sh /startup.sh
+cp startup.sh /startup.sh
 
-service ssh restart;
+#service ssh restart;
