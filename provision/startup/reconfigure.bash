@@ -4,6 +4,6 @@ set -e
 
 set -x
 
-cp startup/startup.sh ../startup.sh
+cp /provision/startup/startup.sh ../startup.sh
 
 service ssh restart;
