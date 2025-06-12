@@ -6,13 +6,6 @@ set -e
 
 set -x
 
-
-
-
-
-
-
-
 ##
 
 cd media/
@@ -20,21 +13,6 @@ cd media/
 bash media.bash
 
 cd ..
-
-##
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ##
 
@@ -50,3 +28,7 @@ cd startup/
 bash reconfigure.bash
 
 cd ..
+
+##
+
+sudo apt -y autoremove
