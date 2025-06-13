@@ -22,4 +22,6 @@ apt install -y mkdocs
 
 apt purge -y google-chrome-stable
 
-# apt install -y chromium-browser
+apt install -y chromium-browser
+
+apt install -y mpv vlc
