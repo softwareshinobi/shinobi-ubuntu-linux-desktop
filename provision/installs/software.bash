@@ -19,3 +19,7 @@ apt install -y recordmydesktop kdenlive shotcut keepassxc
 apt install -y wget net-tools curl iputils-ping dnsutils
 
 apt install -y mkdocs
+
+apt purge -y google-chrome-stable
+
+# apt install -y chromium-browser
