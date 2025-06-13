@@ -24,4 +24,4 @@ apt purge -y google-chrome-stable
 
 apt install -y chromium-browser
 
-apt install -y mpv vlc
+apt install -y mpv
