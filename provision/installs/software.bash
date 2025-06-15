@@ -16,6 +16,8 @@ apt install -y sudo git vim nano dos2unix jq zip filezilla
 
 apt install -y recordmydesktop kdenlive shotcut keepassxc
 
+apt install -y top htop 
+
 apt install -y wget net-tools curl iputils-ping dnsutils
 
 apt install -y mkdocs
