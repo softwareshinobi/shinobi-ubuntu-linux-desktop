@@ -4,11 +4,11 @@ services:
 
         container_name: shinobi-ubuntu-linux-desktop
 
-        image: softwareshinobi/shinobi-ubuntu-linux-desktop:minimal
+        image: softwareshinobi/shinobi-ubuntu-linux-desktop:main
 
         restart: unless-stopped
 
-        hostname: diablo
+        hostname: ${PROJECT_HOSTNAME}
 
         build:
 
@@ -18,22 +18,22 @@ services:
 
         ports:
 
-            - "5922:22"
+            - "${PORT_SSH}:22"
 
-            - "5980:80"
+            - "${PORT_WEB}:80"
 
-            - "5900:5900"
+            - "${PORT_VNC}:5900"
 
         environment:
 
-            TZ: America/New_York
+            TZ: ${TIMEZONE}
 
             USER_UID: 1000
 
             USER_GID: 1000
 
-            USER: shinobi
+            USER: ${VNC_USER}
 
-            PASSWORD: shinobi
+            PASSWORD: ${VNC_PASSWORD}
 
-            HTTP_PASSWORD: shinobi
+            HTTP_PASSWORD: ${WEB_HTTP_PASSWORD}

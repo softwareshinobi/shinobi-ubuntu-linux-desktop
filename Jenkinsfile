@@ -15,7 +15,7 @@ pipeline {
 
             agent {
 
-                label "sian"
+                label "gulfstream"
 
             }
 
@@ -35,7 +35,7 @@ pipeline {
 
             agent {
 
-                label "sian"
+                label "gulfstream"
 
             }
 

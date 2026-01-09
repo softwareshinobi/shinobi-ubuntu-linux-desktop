@@ -74,19 +74,26 @@ HTTP_PASSWORD=
 
 touch /tmp/prince-trunks-has-returned
 
-####
+##
 
 echo
 echo "hey!"
 echo
 
-####
+##
 
 service ssh restart;
 
-####
+##
+
+service cron status
+
+service cron restart
+
+service cron status
+
+##
 
 exec /bin/tini -- supervisord -n -c /etc/supervisor/supervisord.conf
 
 touch /tmp/prince-trunks-has-returned-after
-

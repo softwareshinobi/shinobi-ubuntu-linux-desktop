@@ -10,20 +10,17 @@ set -x;
 
 apt update
 
-apt install -y remmina openssh-server sshpass
-
-apt install -y sudo git vim nano dos2unix jq zip filezilla
+apt install -y sudo remmina sshpass git vim nano dos2unix zip filezilla
 
 apt install -y recordmydesktop kdenlive shotcut keepassxc
 
-apt install -y top htop 
+apt install -y wget net-tools curl
 
-apt install -y wget net-tools curl iputils-ping dnsutils
+## bad nslookup
 
-apt install -y mkdocs
+apt autoremove -y
 
-apt purge -y google-chrome-stable
+rm -rf /var/lib/apt/lists/*
 
-apt install -y chromium-browser
+rm -rf /tmp/*
 
-apt install -y mpv rhythmbox
