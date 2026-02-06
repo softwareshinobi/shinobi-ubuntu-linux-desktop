@@ -10,7 +10,7 @@ set -x
 
 bash apt.bash
 
-#bash upgrade.bash
+bash upgrade.bash
 
 bash software.bash
 
