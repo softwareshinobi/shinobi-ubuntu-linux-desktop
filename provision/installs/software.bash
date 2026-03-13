@@ -12,6 +12,8 @@ apt update
 
 apt install -y sudo remmina sshpass git vim nano dos2unix zip filezilla
 
+apt install -y obs-studio
+
 apt install -y recordmydesktop kdenlive shotcut keepassxc
 
 apt install -y wget net-tools curl
